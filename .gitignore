@@ -1,0 +1,35 @@
+#ignore built classes
+*.class
+#ignore log files
+*.log
+#ignore blueJ files
+*.ctxt
+#ignore mobile tools
+*.mtj.tmp/
+
+#ignore package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+#vm crash logs
+hs_err_pid*
+
+#maven specific stuff
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+#ignore idea folder
+.idea/
