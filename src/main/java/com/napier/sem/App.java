@@ -9,25 +9,21 @@ public class App
 {
     public static void main(String[] args)
     {
-        //connect to MongoDB uysing port 27000
+        // Connect to MongoDB on local system - we're using port 27000
         MongoClient mongoClient = new MongoClient("mongo-dbserver");
-
-        //get or create database
+        // Get a database - will create when we use it
         MongoDatabase database = mongoClient.getDatabase("mydb");
-
-        //get collection from the database
+        // Get a collection from the database
         MongoCollection<Document> collection = database.getCollection("test");
-
-        //create a document to be stored
+        // Create a document to store
         Document doc = new Document("name", "Rosalyn Crothers")
                 .append("class", "Software Engineering Methods")
                 .append("year", "2021")
-                .append("result", new Document("CW", 95).append("EX",85));
-
-        //add the document to the collection
+                .append("result", new Document("CW", 95).append("EX", 85));
+        // Add document to collection
         collection.insertOne(doc);
 
-        //check the document in the collection
+        // Check document in collection
         Document myDoc = collection.find().first();
         System.out.println(myDoc.toJson());
     }
