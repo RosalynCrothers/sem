@@ -1,10 +1,9 @@
-# This is a basic workflow to help you get started with Actions
-name: HelloWorkflow
+name: A workflow for my Hello World App
 on: push
 
 jobs:
   build:
-    name: HelloAction
+    name: Hello world action
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
