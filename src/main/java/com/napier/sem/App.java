@@ -95,7 +95,7 @@ public class App {
             // Return new employee if valid.
             // Check one is returned
             if (rset.next()) {
-                com.napier.sem.Employee emp = new com.napier.sem.Employee();
+                Employee emp = new Employee();
                 emp.emp_no = rset.getInt("emp_no");
                 emp.first_name = rset.getString("first_name");
                 emp.last_name = rset.getString("last_name");
