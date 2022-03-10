@@ -40,7 +40,7 @@ A request for finance information is sent to HR.
 3. HR advisor provides report to finance.
 ## EXTENSIONS
 
-3. **Role does not exist**:
+**Role does not exist**:
     1. HR advisor informs finance no role exists.
 ## SUB-VARIATIONS
 
