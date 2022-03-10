@@ -35,7 +35,7 @@ A new employee's details must be added to the database.
 
 ## MAIN SUCCESS SCENARIO
 
-1. Finance request to add new employee.
+1. HR request to add new employee.
 2. HR advisor gives info of new employee.
 3. A new employee is added.
 
